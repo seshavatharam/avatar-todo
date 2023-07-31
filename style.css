@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./font/Gilroy-Light.woff2') format('woff2'),
+        url('./font/Gilroy-Light.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./font/Gilroy-ExtraBold.woff2') format('woff2'),
+        url('./font/Gilroy-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+*{
+    margin :0px;
+    padding :0px;
+    font-family: gilroy;
+    font-weight: 500;
+    box-sizing: border-box;
+  
+}
+i{
+    max-width: 5%;
+    color:rgb(255, 94, 0);
+}
+body{
+    
+    height: 100%;
+}
+#heading{
+    position: absolute;
+    left: 50%;
+    top: -10%;
+    transform: translateX(-50%);
+    z-index: 3;
+    font-weight: bolder;
+    color: rgb(255, 98, 0);
+    text-decoration: underline;
+}
+video{
+  width: 100%;
+  height: 115%;
+  position: fixed;
+  top: -5%;
+  z-index: -1;
+}
+.ff{
+    color: black;
+}
+.texwit{
+  color: rgb(0, 0, 0);
+  margin: 6px;
+}
+.tex{
+    color:black
+}
+#main{
+  min-height: 100vh;
+  width: 100%;
+  position:relative;
+
+}
+.wrapper{
+    background-color: rgba(0, 0, 0, 0.25);
+    max-width: 405px;
+    margin:135px auto;
+    border-radius: 7px;
+    padding: 28px 0;
+}
+.task-input{
+    height: 52px;
+    padding: 0 25px;
+    position: relative;
+}
+.task-input i{
+  color: rgb(255, 98, 0);
+    position: absolute;
+    top: 50%;
+    transform: translate(17px,-50%);
+}
+.task-input input{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #999;
+    font-size: 17px;
+    padding: 0 23px 0 53px;
+}
+.task-input input::placeholder{
+    color: #969696
+}
+.controls, li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.controls{
+    border-bottom: 1px solid #ccc;
+    padding: 18px 25px;
+}
+.filters span{
+    cursor: pointer;
+    margin: 0 8px;
+    font-size: 16px;
+}
+.filters span:first-child{
+    margin-left: 0;
+}
+.filters span.active{
+    color: rgb(255, 98, 0);
+    font-weight: 500;
+}
+.controls .clear-btn{
+    outline: none;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 7px 13px;
+    background-color: #3c87ff;
+    cursor: pointer;
+    font-size: 13px;
+}
+.task-box{
+    margin: 20px 25px;
+}
+.task-box .task{
+    list-style: none;
+    color: #ffffff;
+    font-size: 17px;
+    margin-bottom: 28px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ccc;
+}
+.task-box .task:last-child{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+.task label{
+    display: flex;
+}
+.task label p.checked{
+    text-decoration: line-through;
+}
+.task label input{
+    margin-top: 6px;
+    margin-right: 12px;
+}
+.task .settings{
+    cursor: pointer;
+    position: relative;
+}
+.settings .task-menu{
+    position: absolute;
+    padding: 5px 0;
+    right: -5px;
+    bottom: -65px;
+    z-index: 2;
+    transform: scale(0);
+    transform-origin: top right;
+    transition: transform 0.2s ease;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+}
+.settings .task-menu.show{
+    transform: scale(1);
+}
+.task-menu li{
+    height: 25px;
+    justify-content: flex-start;
+    margin-bottom: 2px;
+    font-size: 16px;
+    padding: 17px 15px;
+}
+.task-menu li:hover{
+    background: #f5f5f5;
+}
+.task-menu li:last-child{
+    margin-bottom: 0;
+}
+.task-menu li i{
+    padding-right: 8px;
+}

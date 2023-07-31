@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body> 
+  <div id="main">
+    <h1 id="heading">TO-DO</h1>
+    <video src="./livewall.mp4" muted autoplay loop></video>
+    <div class="wrapper">
+        <div class="task-input">
+            <i class="uil uil-clipboard-blank"></i>
+            <input type="text" placeholder="what are you thinking TO-DO">
+        </div>
+        <div class="controls">
+            <div class="filters">
+                <span id="all" class="active">All</span>
+                <span id="pending">ToDo</span>
+                <span id="completed">Completed</span>
+            </div>
+            <button class="clear-btn">Clear All</button>
+        </div>
+        <ul class="task-box"></ul>
+    </div>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>
